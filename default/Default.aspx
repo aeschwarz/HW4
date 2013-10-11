@@ -6,6 +6,11 @@
 <head runat="server">
     <title></title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <style type="text/css">
+        .auto-style1 {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -33,7 +38,8 @@
         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Please Fill In PostTax Deductions" BorderStyle="Dotted" ControlToValidate="PostTaxtb"></asp:RequiredFieldValidator>
         <br />
         <br />
-        <strong>Net Income:</strong><br />
+        <span class="auto-style1">
+        <strong>Net Income:</strong></span><br />
         <asp:Label ID="NetIncomeL" runat="server" BackColor="White" BorderStyle="Double" ForeColor="Black"></asp:Label>
         <br />
         <br />
